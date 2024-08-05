@@ -9,19 +9,24 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="./css/styles.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/izitoast/1.4.0/css/iziToast.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/simplelightbox/2.10.0/simple-lightbox.min.css" />
 </head>
 
+
 <body>
-  <form class="search-form">
-    <input type="text" name="query" placeholder="Search images..." required/>
-    <button class="search-button" type="submit">Search</button>
+  <form id="search-form" class="search-form">
+    <input type="text" name="query" id="search-query" placeholder="Search images..." required>
+    <button type="submit">Search</button>
   </form>
-
-  <div class="loader hidden"></div> 
+  
+  <div id="loader" class="loader hidden">
+    <img src="/src/assets/loader.gif" alt="Loading...">
+  </div>
   <ul class="gallery"></ul>
+  <script type="module" src="./main.js"></script>
 
 
-  <script type="module" defer src="./main.js"></script>
 </body>
 
 

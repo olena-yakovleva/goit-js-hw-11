@@ -1,12 +1,17 @@
 /* -----------------form----------------- */
 
 body {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   max-width: 1440px;
-  background-color: #454546;
+  background-color: #d826b4;
   margin-left: auto;
   margin-right: auto;
   margin-top: 0;
@@ -23,27 +28,17 @@ body {
 }
 
 .search-form input {
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.04em;
-  color: #2e2f42;
-  border: 1px solid #808080;
-  border-radius: 4px;
   width: 256px;
   height: 38px;
   outline: none;
-  padding: 0px 16px 0px 16px;
+  padding: 0px 16px 0px 16px; 
+  color: #2e2f42;
+  border: 1px solid #808080;
+  border-radius: 4px;
   transition: border 0.3s ease;
 }
 
 .search-form input::placeholder {
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.04em;
   color: #808080;
 }
 
@@ -56,11 +51,7 @@ body {
 }
 
 .search-form button {
-  font-family: 'Montserrat', sans-serif;
   font-weight: 500;
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.04em;
   color: #fff;
   border-radius: 8px;
   padding: 8px 16px;
@@ -75,7 +66,10 @@ body {
 
 .search-form button:hover {
   background-color: #6c8cff;
-}
+} 
+
+
+
 
 /* -----------------gallery----------------- */
 
@@ -96,12 +90,11 @@ body {
   height: 200px;
   border-radius: 5px;
   overflow: hidden;
-  box-shadow: 0 2px 4px rgba(255, 255, 255, 0.1);
   transition: transform 0.3s;
 }
 
 .gallery li:hover {
-  transform: scale(1.05);
+  transform: scale(1.5);
 }
 
 .gallery img {
@@ -120,7 +113,6 @@ body {
 }
 
 .info p {
-  font-family: 'Montserrat', sans-serif;
   font-weight: 600;
   font-size: 12px;
   line-height: 1.33;

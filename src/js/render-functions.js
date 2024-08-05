@@ -17,7 +17,7 @@ export function renderImages(images) {
       }) => `
     <li>
       <a href="${largeImageURL}">
-        <img src="${webformatURL}" alt="${tags}" />
+        <img src="${webformatURL}" alt="${tags}" loading="lazy" />
       </a>
       <div class="info">
         <p>Likes:<br /><spann>${likes}</spann></p>
