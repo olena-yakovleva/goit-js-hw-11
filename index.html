@@ -9,23 +9,28 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet" />
   
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/izitoast/1.4.0/css/iziToast.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/simplelightbox/2.10.0/simple-lightbox.min.css" />
   <script type="module" crossorigin src="/goit-js-hw-11/commonHelpers.js"></script>
   <link rel="modulepreload" crossorigin href="/goit-js-hw-11/assets/vendor-0fc460d7.js">
   <link rel="stylesheet" href="/goit-js-hw-11/assets/vendor-4b066c51.css">
-  <link rel="stylesheet" href="/goit-js-hw-11/assets/index-b9355b7e.css">
+  <link rel="stylesheet" href="/goit-js-hw-11/assets/index-07e59fdf.css">
 </head>
 
+
 <body>
-  <form class="search-form">
-    <input type="text" name="query" placeholder="Search images..." required/>
-    <button class="search-button" type="submit">Search</button>
+  <form id="search-form" class="search-form">
+    <input type="text" name="query" id="search-query" placeholder="Search images..." required>
+    <button type="submit">Search</button>
   </form>
-
-  <div class="loader hidden"></div> 
-  <ul class="gallery"></ul>
-
-
   
+  <div id="loader" class="loader hidden">
+    <img src="/src/assets/loader.gif" alt="Loading...">
+  </div>
+  <ul class="gallery"></ul>
+  
+
+
 </body>
 
 
